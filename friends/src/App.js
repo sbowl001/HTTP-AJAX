@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import FriendsList from './components/FriendsList';
+import AddFriend from './components/AddFriend';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <AddFriend />
+        <FriendsList /> 
       </div>
     );
   }
 }
 
 export default App;
+
+//SOLID
+//Single Reponsibility Principle 
+//Open/Close 
+// Liskov substitution 
+//Interface segregation
+//Dependency inversion 
+
+//Dry = Don't repeat yourself
